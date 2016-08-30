@@ -2,6 +2,7 @@ import * as express from 'express'
 import { IConfig } from './config'
 import Database from './db'
 import { PresenterResource } from './resources/presenter'
+import { SessionResource } from './resources/session'
 
 // tslint:disable:no-console
 
@@ -30,7 +31,9 @@ class App {
 
   routes() {
     const presenter = new PresenterResource(this.app, this.config)
+    const session = new SessionResource(this.app, this.config)
     presenter.register('/presenter')
+    session.register('/session')
   }
 }
 
