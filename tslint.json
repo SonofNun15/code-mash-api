@@ -1,0 +1,14 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "no-constructor-vars": true,
+    "semicolon": [true, "never"],
+    "quotemark": [true, "single", "avoid-escape"],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "member-access": false,
+    "eofline": true,
+    "no-consecutive-blank-lines": false,
+    "no-var-requires": false
+  }
+}

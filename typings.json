@@ -1,0 +1,12 @@
+{
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160826120425"
+  },
+  "dependencies": {
+    "bluebird": "registry:npm/bluebird#3.4.1+20160811213708",
+    "express": "registry:npm/express#4.14.0+20160815112707",
+    "lodash": "registry:npm/lodash#4.0.0+20160723033700",
+    "mongoose": "registry:npm/mongoose#4.3.5+20160628072220",
+    "thenify": "registry:npm/thenify#3.1.0+20160723033700"
+  }
+}

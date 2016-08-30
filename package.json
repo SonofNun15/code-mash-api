@@ -1,0 +1,29 @@
+{
+  "name": "code-mash-api",
+  "version": "1.0.0",
+  "description": "Backend API and data layer for CodeMash precompiler app",
+  "scripts": {
+    "start": "npm-run-all --parallel serve lint",
+    "serve": "ts-node server.ts",
+    "lint": "tslint server.ts src/**/*.ts",
+    "lint:watch": "watch \"npm run lint\" ./src",
+    "test": "mocha"
+  },
+  "author": "Josh Graber",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.3",
+    "express": "^4.14.0",
+    "lodash": "^4.15.0",
+    "mongoose": "^4.5.10",
+    "thenify": "^3.2.0",
+    "ts-node": "^1.3.0",
+    "typescript": "^1.8.10"
+  },
+  "devDependencies": {
+    "npm-run-all": "^3.0.0",
+    "tslint": "^3.15.1",
+    "watch": "^0.19.2",
+    "typings": "^1.3.3"
+  }
+}
