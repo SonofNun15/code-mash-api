@@ -7,15 +7,22 @@ const thenify = require('thenify')
 
 const readFile = thenify(fs.readFile)
 
-const defaultPath: string = path.join(__dirname, 'app-config.ts')
+const defaultPath: string = path.join(__dirname, 'app-config.json')
 
 export interface IConfig {
   port: number,
+
+  pageSize: number,
 
   baseUrl: string,
 
   dbHost: string,
   dbName: string,
+
+  passwordSaltLength: number,
+
+  sessionAge: number,
+  sessionSecret: string,
 }
 
 export function getConfig(path = defaultPath, encoding = 'utf8'): Promise<IConfig> {
